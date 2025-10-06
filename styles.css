@@ -52,7 +52,6 @@ canvas {
   box-sizing: border-box;
 }
 
-/* Основной контейнер */
 .scrolling-container {
   width: 500px;
   height: 400px;
@@ -65,14 +64,12 @@ canvas {
   transition: all 0.3s ease;
 }
 
-/* Эффект при наведении */
 .scrolling-container:hover {
   border-color: #000;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
   transform: translateY(-2px);
 }
 
-/* Текст для прокрутки */
 .scrolling-text {
   position: absolute;
   bottom: 0;
@@ -80,7 +77,6 @@ canvas {
   animation: scrollUp 10s linear infinite;
 }
 
-/* Стили для отдельных сообщений */
 .scrolling-text p {
   margin: 12px 20px;
   padding: 12px 16px;
@@ -95,13 +91,11 @@ canvas {
   transition: all 0.3s ease;
 }
 
-/* Эффект для сообщений при наведении */
 .scrolling-container:hover .scrolling-text p {
   background: linear-gradient(135deg, #2a2a2a, #363636);
   border-left-color: #0099ff;
 }
 
-/* Анимация прокрутки */
 @keyframes scrollUp {
   0% {
     transform: translateY(0);
@@ -111,12 +105,10 @@ canvas {
   }
 }
 
-/* Пауза при наведении */
 .scrolling-container:hover .scrolling-text {
   animation-play-state: paused;
 }
 
-/* Индикатор прокрутки */
 .scrolling-container::before {
   content: '';
   position: absolute;
@@ -140,3 +132,4 @@ canvas {
   z-index: 2;
   pointer-events: none;
 }
+
