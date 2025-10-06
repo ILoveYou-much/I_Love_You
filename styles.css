@@ -28,7 +28,7 @@ canvas {
   border-radius: 4px;
   font-weight: bold;
   display: inline-block;
-  font-size: 40px;
+  font-size: 32px;
   cursor: pointer;
   background-color: rgba(30,30,30,2);
 }
@@ -132,6 +132,7 @@ canvas {
   z-index: 2;
   pointer-events: none;
 }
+
 
 
 
