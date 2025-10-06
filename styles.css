@@ -86,7 +86,7 @@ canvas {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   border-left: 3px solid #000000;
   font-family: 'Arial', sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 1.4;
   transition: all 0.3s ease;
 }
@@ -132,5 +132,6 @@ canvas {
   z-index: 2;
   pointer-events: none;
 }
+
 
 
