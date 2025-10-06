@@ -73,7 +73,7 @@ var init = function () {
             vx: 0,
             vy: 0,
             R: 2,
-            speed: rand() + 15,
+            speed: rand() + 8,
             q: ~~(rand() * heartPointsCount),
             D: 2 * (i % 2) - 1,
             force: 0.2 * rand() + 0.7,
@@ -142,6 +142,7 @@ var init = function () {
 var s = document.readyState;
 if (s === 'complete' || s === 'loaded' || s === 'interactive') init();
 else document.addEventListener('DOMContentLoaded', init, false);
+
 
 
 
