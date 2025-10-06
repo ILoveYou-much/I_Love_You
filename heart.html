@@ -55,15 +55,18 @@
 
         function toggleMiniPlayer() {
             if (isPlaying) {
-                audio.pause();
-                playerStatus.textContent = 'Выкл';
-                isPlaying = false;
-            } else {
                 audio.play().catch(error => {
                     console.log('Ошибка воспроизведения:', error);
                 });
                 playerStatus.textContent = 'Вкл';
                 isPlaying = true;
+                audio.pause();
+                playerStatus.textContent = 'Выкл';
+                isPlaying = false;
+            } else {
+                audio.pause();
+                playerStatus.textContent = 'Выкл';
+                isPlaying = false;
             }
         }
 
@@ -77,5 +80,6 @@
 <h3></h3>
 </body>
 </html>
+
 
 
