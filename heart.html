@@ -44,7 +44,7 @@
     </audio>
 
     <div class="mini-player" onclick="toggleMiniPlayer()" id="miniPlayer">
-        🎵 <span id="playerStatus">Вкл</span>
+        🎵 <span id="playerStatus">Включить</span>
     </div>
 
     <script>
@@ -69,7 +69,7 @@
 
         audio.play().catch(error => {
             console.log('Автовоспроизведение заблокировано');
-            playerStatus.textContent = 'Выкл';
+            playerStatus.textContent = 'Выключено';
             isPlaying = false;
         });
     </script>
@@ -77,6 +77,7 @@
 <h3></h3>
 </body>
 </html>
+
 
 
 
