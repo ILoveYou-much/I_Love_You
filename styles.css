@@ -54,7 +54,7 @@ canvas {
 
 .scrolling-container {
   width: 500px;
-  height: 900px;
+  height: 1200px;
   background-color: #000000;
   border: 2px solid #000;
   border-radius: 12px;
@@ -132,6 +132,7 @@ canvas {
   z-index: 2;
   pointer-events: none;
 }
+
 
 
 
